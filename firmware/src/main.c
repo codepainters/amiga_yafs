@@ -1,5 +1,6 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <avr/sleep.h>
 #include <stdbool.h>
 
 #include "config.h"
@@ -69,11 +70,7 @@ static void set_routing(bool swapped) {
 }
 
 static inline void enable_buzzer(bool enable) {
-    if (enable) {
-        TCA0.SINGLE.CTRLB = TCA_SINGLE_CMP1EN_bm | TCA_SINGLE_WGMODE_SINGLESLOPE_gc;
-    } else {
-        TCA0.SINGLE.CTRLB = TCA_SINGLE_WGMODE_SINGLESLOPE_gc;
-    }
+    TCA0.SINGLE.CTRLB = (enable ? TCA_SINGLE_CMP1EN_bm : 0) | TCA_SINGLE_WGMODE_SINGLESLOPE_gc;
 }
 
 static void beep(bool twice) {
@@ -165,7 +162,7 @@ int main(void) {
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "EndlessLoop"
     while (1) {
-        // sleep();
+        sleep_cpu();
         if (switch_pending) {
             switch_config();
             switch_pending = false;

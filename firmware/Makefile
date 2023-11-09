@@ -29,7 +29,7 @@ COMMON_FLAGS = -c -g3 -Os $(INCLUDE_PATHS) -std=gnu99 -Wall -Wno-unknown-pragmas
 	-mmcu=at$(MCU_TYPE) \
 	-D__$(MCU_TYPE)__ -DDEBUG \
 	-B ./dev/at$(MCU_TYPE) \
-	-I include
+	-Iinclude
 
 CFLAGS  = $(COMMON_FLAGS) -DTARGET=$(TARGET) -fno-builtin
 
