@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2023 Przemysław Węgrzyn <pwegrzyn@codepainters.com>
+// SPDX-License-Identifier: MIT
+
 #ifndef __CONFIG_H__
 #define __CONFIG_H__
 
@@ -11,15 +14,20 @@
 
 #define IN_SEL0_PORT   (PORTB)
 #define IN_SEL0_PIN    (0)
+#define IN_SEL0_EV     (EVSYS_ASYNCCH1_PORTB_PIN0_gc)
+
 #define IN_SEL1_PORT   (PORTA)
 #define IN_SEL1_PIN    (1)
+#define IN_SEL1_EV     (EVSYS_ASYNCCH0_PORTA_PIN1_gc)
 
 #define OUT_SEL0_PORT   (PORTB)
 #define OUT_SEL0_PIN    (2)
 #define OUT_SEL0_bm     (1 << OUT_SEL0_PIN)
+
 #define OUT_SEL1_PORT   (PORTA)
 #define OUT_SEL1_PIN    (2)
 #define OUT_SEL1_bm     (1 << OUT_SEL1_PIN)
+
 
 #define OUT_BZR_PORT    (PORTB)
 #define OUT_BZR_PIN     (1)
@@ -36,7 +44,10 @@
 // 20Mhz / 16 / 625 -> 2kHz
 #define TCA0_PERIOD     (625)
 
+// reset press duration required to swap the config,
+// expressed in timer ticks, 4000 -> 2s
+#define NRST_PRESS_DURATION (4000)
 
-#define NRST_PRESS_DURATION (2000)
+#define BEEP_DURATION (200)
 
 #endif

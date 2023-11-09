@@ -12,11 +12,11 @@ OBJDUMP = $(CROSS_COMPILE)objdump
 #
 
 # Note: 'at' prefix is added where needed
-# MCU_TYPE = tiny404
-MCU_TYPE = tiny416
+MCU_TYPE = tiny404
+# MCU_TYPE = tiny416
 OUTFILE = yafs
 
-OBJS = $(addprefix objs/,main.o)
+OBJS = $(addprefix objs/,main.o timer.o)
 INCLUDE_PATHS = -Isrc 
 vpath %.c	src
 vpath %.h	src
