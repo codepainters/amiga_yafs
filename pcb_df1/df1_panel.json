@@ -1,0 +1,21 @@
+{
+    "layout": {
+        "hspace": "4mm",
+        "vspace": "4mm",
+        "rows": "4",
+        "cols": "2",
+        "vbonecut": "False"
+    },
+    "tabs": {
+        "spacing": "15mm"
+    },
+    "cuts": {
+        "type": "mousebites"
+    },
+    "framing": {
+        "type": "railstb"
+    },
+    "fiducials": {
+        "type": "3fid"
+    }
+}
