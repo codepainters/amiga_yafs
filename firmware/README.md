@@ -2,7 +2,11 @@
 
 This directory contains the YAFS firmware source code.
 
-In order to build it `avr-gcc` and `avr-libc` are required. On Debian/Ubuntu you can simply:
+**Note:** If you don't want to compile it yourself, you can use precompiled [rel/yafs_1.0.hex](rel/yafs_1.0.hex).
+
+## Compiling
+
+First you need to install `avr-gcc` and `avr-libc`, on Debian/Ubuntu you can simply:
 
 ```sh
 $ sudo apt-get install avr-gcc avr-libc make
@@ -22,13 +26,11 @@ Notes:
 
 * files under `dev` and `include` directories (device specs, headers and runtime libs) come from Microchip. Currently `avr-gcc` is missing definitions for `ATTiny404/416`.
 
-
-
 ## Programming
 
 The `ATtiny 404` MCU uses `UPDI` single-pin programming / debugging interface. While debugging requires dedicated interface, programming can be done trivially with:
 
-* USB-to-UART interface (I use cheap Chinese PL2303-based one).
+* USB-to-UART dongle (I use cheap Chinese PL2303-based cable).
 
 * single 2k2 or 4k7 resistor
 
