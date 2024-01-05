@@ -500,7 +500,7 @@
         (effects (font (size 0.508 0.508) (thickness 0.0762)) (justify mirror))
       (tstamp fb0b5452-1e54-465c-825e-3defe39462ca)
     )
-    (fp_text value "10k" (at 0 -1.65 -360) (layer "B.Fab") hide
+    (fp_text value "2k2" (at 0 -1.65 -360) (layer "B.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp a1faa6a0-4502-4254-957a-e0b0da76b880)
     )
