@@ -26,6 +26,7 @@ Looking for a solution, I've found [Amiga Floppy Swap](https://github.com/retron
 * my project uses only a single chip, `ATtiny 404` microcontroller, which costs below **0.50 EUR** (at least at the time of this writing),
 * the smaller board (which allows for internal drive being enumerated as `DF1:`) doesn't need to be connected with the bigger board. Actually it contains only 2 MOSFETs and 2 resistors and doesn't need any extra connections, beside the floppy flat cable (not even +5V supply!). 
 * it is configurable - one can chose if it beeps on every start (or only when changing the configuration) and which configuration (last used vs always swapped vs always straight) it should use upon powering up (see [pcb_cia](pcb_cia) description for details).
+* the smaller board is plugged into the mainboard (as opposed to between the cable and FDD) - this way possible collision with the EMI shielding sheet metal is entirely avoided.
 
 Also, it's fun to make something new (even if reinventing the wheel).
 
