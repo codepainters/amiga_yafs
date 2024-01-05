@@ -40,7 +40,7 @@ The `ATtiny 404` MCU uses `UPDI` single-pin programming / debugging interface. W
 
 Connect the UART cable and resistor like this (label colors match my UART cable):
 
-![](/home/czajnik/work/YAFS/firmware/pcb_cia_prog.png)
+![](pcb_cia_prog.png)
 
 
 
