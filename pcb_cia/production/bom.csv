@@ -1,0 +1,13 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+BZ1,buzzer,1,Buzzer,
+C1,0603,1,100nF,
+C2,1206,1,1uF,
+D1,SOT-23,1,BAT54C,
+J1,DIP-40_W15.24mm,1,Pins,
+J2,DIP-40_W15.24mm_Socket,1,Socket,
+J3,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,1,CFG1,
+J4,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,1,CFG2,
+J5,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,1,CFG3,
+J6,PinHeader_1x03_P2.54mm_Vertical,1,UPDI,
+R1,0603,1,120R,
+U1,SOIC-14_3.9x8.7mm_P1.27mm,1,ATtiny404-SS,
