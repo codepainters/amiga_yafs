@@ -10,7 +10,7 @@
 
 Note:
 
-* for `BZ1` buzzer I have used magnetic buzzer, but pretty much anything should work, as long as  U1 maximum current (20 mA) is not exceeded. You may need to adjust R1 value.
+* for `BZ1` buzzer I have used `KPM1201A` magnetic buzzer, but pretty much anything should work, as long as U1 maximum output current (20 mA) is not exceeded. You may need to adjust R1 value.
 * I've added `D1` diode as a back EMF protection, but it turned out it is not really necessary with the buzzer I use. 
 * for programming instructions, see [here](../firmware)
 
